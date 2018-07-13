@@ -342,5 +342,20 @@ rm BASICS
         plot file using 1:2 title 'name'
     add names for coordinates automatically from first line
         set key autotitle columnhead
-    set autoscale
-        set autoscale xy / unset autoscale xy
+    set autoscale 
+	 set autoscale xy / unset autoscale xy
+
+	WORK WITH GITHUB
+
+    create repository on github.com and clone to the location where you want
+	git clone https://github.com/my_username/my_new_repository
+    stage the file for commit to my local repository
+	git add file / git add .
+    to unstage a file 
+	git reset HEAD file
+    commit the file that you've staged in local repository
+	git commit -m "message"
+    to remove this commit 
+	git reset --soft HEAD~1
+    push the changes to github
+	git push [alias] [branch]
