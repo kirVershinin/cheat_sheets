@@ -358,7 +358,7 @@ rm BASICS
     to remove this commit 
 	git reset --soft HEAD~1
     push the changes to github
-	git push [alias] [branch]
+	git push 
 
     initialize and add existing repository 
 	git init 
