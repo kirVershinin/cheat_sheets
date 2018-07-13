@@ -343,7 +343,7 @@ rm BASICS
     add names for coordinates automatically from first line
         set key autotitle columnhead
     set autoscale 
-	 set autoscale xy / unset autoscale xy
+	set autoscale xy / unset autoscale xy
 
 	WORK WITH GITHUB
 
@@ -359,3 +359,18 @@ rm BASICS
 	git reset --soft HEAD~1
     push the changes to github
 	git push [alias] [branch]
+
+    initialize and add existing repository 
+	git init 
+    stage the file for commit to my local repository
+	git add .
+    commit the file that you've staged in local repository
+	git commit -m "message"
+    add URL for the remote repository
+	git remote add origin https://github.com/my_username/my_repository
+    verify the new remote URL
+	git remote -v
+    push changes to github
+	git push [alias] [branch]
+    push changes to github with force
+	git push -f [alias] [branch]
