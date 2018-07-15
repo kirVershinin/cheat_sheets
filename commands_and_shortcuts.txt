@@ -386,3 +386,5 @@
 	git checkout -b new_branch
     merge the specifed branch's history into current one
 	git merge branch 
+    one more command
+	git cmd
