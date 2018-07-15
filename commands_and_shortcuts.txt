@@ -235,6 +235,8 @@
 	ssh add -l	
     delete ssh identities from ssh agent
 	ssh-add -D
+    check that the key is being used by trying to connect to host
+	ssh -vT host
 
     entrance to server
         ssh login@addres -port
