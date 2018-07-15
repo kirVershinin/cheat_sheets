@@ -351,7 +351,7 @@
     stage the file for commit to my local repository
 	git add file / git add .
     to unstage a file 
-	git reset HEAD file
+	git reset HEAD file / git reset file
     commit the file that you've staged in local repository
 	git commit -m "message"
     to remove this commit 
@@ -373,3 +373,16 @@
 	git push [alias] [branch]
     push changes to github with force
 	git push -f [alias] [branch]
+    
+    check what is different from our last commit
+	git diff HEAD
+    check what is different in staged files  from last commit     
+	git diff --staged
+    reset the file to the latest commited version
+    	git checkout --file
+    pull down any new changes
+	git pull / git pull origin master
+    create new branch and switch to it
+	git checkout -b new_branch
+    merge the specifed branch's history into current one
+	git merge branch 
