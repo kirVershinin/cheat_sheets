@@ -221,7 +221,20 @@
     take information about URL
         curl -v 'url'
 
-            WORK WITH REMOTE SERVER
+            WORK WITH SSH
+    
+    create new ssh keys
+    	ssh-keygen
+    start ssh-agent in the background
+	eval `ssh-agent -s`
+    add  private ssh key to the ssh-agent
+	ssh-add ~/.ssh/id_rsa
+    view your public keys
+	ssh add -L
+    view ssh fingerprints
+	ssh add -l	
+    delete ssh identities from ssh agent
+	ssh-add -D
 
     entrance to server
         ssh login@addres -port
