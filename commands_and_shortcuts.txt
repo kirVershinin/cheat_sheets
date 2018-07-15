@@ -387,3 +387,4 @@
     merge the specifed branch's history into current one
 	git merge branch
 new cmds
+	git cm
