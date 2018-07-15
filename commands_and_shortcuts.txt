@@ -1,4 +1,4 @@
-            WORK WITH DIRECTORY
+        	WORK WITH DIRECTORY
 
     new window in the terminal
         Ctrl + Shift + T
@@ -77,7 +77,7 @@
     continue program execution in the backgound mode w sn
         bg %<num>
 
-            WORK WITH FILES
+        	WORK WITH FILES
 
     view file content
         cat /file
@@ -216,12 +216,12 @@
     unpack .tar.gz archive
         tar -xzvf archive.tar.gz
 
-            WORK WITH URL
+        	WORK WITH URL
 
     take information about URL
         curl -v 'url'
 
-            WORK WITH SSH
+        	WORK WITH SSH
     
     create new ssh keys
     	ssh-keygen
@@ -261,7 +261,7 @@
     copy files from client (dir1/file) to server (dir2)
         scp -P port dir1/file login@adress:dir2
 
-            WORK WITH SYSTEM
+        	WORK WITH SYSTEM
 
     stop program execution
         Ctrl + C
@@ -302,7 +302,7 @@
     system storage info(used/available)
         df -h
 
-            WORK WITH TMUX
+        	WORK WITH TMUX
 
     create new windiow
         Ctrl + B C
@@ -337,7 +337,7 @@
     display big clock
         Ctrl + B t
 
-        WORK WITH VIM
+        	WORK WITH VIM
 
     in build vim lessons
         vimtutor
@@ -346,7 +346,7 @@
     undo all changes since opening buffer
         :u1|u
 
-        WORK WITH GNUPLOT
+        	WORK WITH GNUPLOT
 
     make chart by file (1 = x, 2 = y)
         plot file using 1:2
@@ -359,7 +359,7 @@
     set autoscale 
 	set autoscale xy / unset autoscale xy
 
-	WORK WITH GITHUB
+		WORK WITH GITHUB
 
     create repository on github.com and clone to the location where you want
 	git clone https://github.com/my_username/my_new_repository
@@ -401,3 +401,41 @@
 	git checkout -b new_branch
     merge the specifed branch's history into current one
 	git merge branch
+
+		WORK WITH PYTHON
+
+    check version
+	python -V / python3 --version
+	
+		WORK WITH PIP
+
+    pip commands and options
+	pip
+    list of installed packages
+	pip list
+    list of outdated packages
+	pip list -o
+    check for broken packages
+	pip check   
+    search in pip repository
+	pip search query
+    output installed packages in requirements format and save to file
+	pip freeze > requirements.txt		   
+    install packages from requirements.txt
+	pip install -r requirements.txt
+
+		WORK WITH VIRTUALENV
+    
+    create new virtual enviroment with default python version
+ 	virtualenv name   
+    create new virtual enviroment
+	virtualenv
+    specifed python version in virtual enviroment
+	vitrualenv -p python3 . or virtualenv -p /usr/local/bin/python3
+    activate virtual enviroment 
+  	source bin/activate
+    deactivate virtual enviroment
+	deacivate
+    check for instaled pacakges in current virtual enviroment
+	pip freeze
+
