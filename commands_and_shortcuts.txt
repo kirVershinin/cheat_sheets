@@ -401,6 +401,10 @@
 	git checkout -b new_branch
     merge the specifed branch's history into current one
 	git merge branch
+    delete file from repo 
+    	git rm --cached file
+    delete file from repo and from the local file system
+    	git rm file
 
 		WORK WITH PYTHON
 
