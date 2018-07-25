@@ -388,6 +388,8 @@
 	git push [alias] [branch]
     push changes to github with force
 	git push -f [alias] [branch]
+    if fatal: refusing to merge unrelated histories
+	git pull origin master --allow-unrelated-histories
     
     check what is different from our last commit
 	git diff HEAD
