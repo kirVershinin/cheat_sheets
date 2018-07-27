@@ -342,7 +342,7 @@
     in build vim lessons
         vimtutor
     undo last command
-	:u    
+		:u    
     undo all changes since opening buffer
         :u1|u
 
@@ -357,112 +357,132 @@
     add names for coordinates automatically from first line
         set key autotitle columnhead
     set autoscale 
-	set autoscale xy / unset autoscale xy
+		set autoscale xy / unset autoscale xy
 
-		WORK WITH GITHUB
+			WORK WITH GITHUB
 
     create repository on github.com and clone to the location where you want
-	git clone https://github.com/my_username/my_new_repository
+		git clone https://github.com/my_username/my_new_repository
     stage the file for commit to my local repository
-	git add file / git add .
+		git add file / git add .
     to unstage a file 
-	git reset HEAD file / git reset file
+		git reset HEAD file / git reset file
     commit the file that you've staged in local repository
-	git commit -m "message"
+		git commit -m "message"
     to remove this commit 
-	git reset --soft HEAD~1
+		git reset --soft HEAD~1
     push the changes to github
-	git push 
+		git push 
 
     initialize and add existing repository 
-	git init 
+		git init 
     stage the file for commit to my local repository
-	git add .
+		git add .
     commit the file that you've staged in local repository
-	git commit -m "message"
+		git commit -m "message"
     add URL for the remote repository
-	git remote add origin https://github.com/my_username/my_repository
+		git remote add origin https://github.com/my_username/my_repository
     verify the new remote URL
-	git remote -v
+		git remote -v
     push changes to github
-	git push [alias] [branch]
+		git push [alias] [branch]
     push changes to github with force
-	git push -f [alias] [branch]
+		git push -f [alias] [branch]
     if fatal: refusing to merge unrelated histories
-	git pull origin master --allow-unrelated-histories
+		git pull origin master --allow-unrelated-histories
     
     check what is different from our last commit
-	git diff HEAD
+		git diff HEAD
     check what is different in staged files  from last commit     
-	git diff --staged
+		git diff --staged
     reset the file to the latest commited version
     	git checkout --file
     pull down any new changes
-	git pull / git pull origin master
+		git pull / git pull origin master
     create new branch and switch to it
-	git checkout -b new_branch
+		git checkout -b new_branch
     merge the specifed branch's history into current one
-	git merge branch
+		git merge branch
     delete file from repo 
     	git rm --cached file
     delete file from repo and from the local file system
     	git rm file
 
-		WORK WITH PYTHON
+			WORK WITH PYTHON
 
     check version
-	python -V / python3 --version
+		python -V / python3 --version
 	
-		WORK WITH PIP
+			WORK WITH PIP
 
     pip commands and options
-	pip
+		pip
     list of installed packages
-	pip list
+		pip list
     list of outdated packages
-	pip list -o
+		pip list -o
     check for broken packages
-	pip check   
+		pip check   
     search in pip repository
-	pip search query
+		pip search query
     output installed packages in requirements format and save to file
-	pip freeze > requirements.txt		   
+		pip freeze > requirements.txt		   
     install packages from requirements.txt
-	pip install -r requirements.txt
+		pip install -r requirements.txt
 
-		WORK WITH VIRTUALENV
+			WORK WITH VIRTUALENV
     
     create new virtual enviroment with default python version
- 	virtualenv name   
+ 		virtualenv name   
     create new virtual enviroment
-	virtualenv
+		virtualenv
     specifed python version in virtual enviroment
-	vitrualenv -p python3 . or virtualenv -p /usr/local/bin/python3
+		vitrualenv -p python3 . or virtualenv -p /usr/local/bin/python3
     activate virtual enviroment 
-  	source bin/activate
+  		source bin/activate
     deactivate virtual enviroment
-	deacivate
+		deacivate
     check for instaled pacakges in current virtual enviroment
-	pip freeze
+		pip freeze
 
     		WORK WITH VENV
     create new venv with python3
-	python3 -m venv project_name
+		python3 -m venv project_name
     activate venv
-	source project_name/bin/activate
+		source project_name/bin/activate
 
-		WORK WITH DJANGO
-    create django project
-	django-admin startproject project_name
+			WORK WITH DJANGO
+
+    run python with specified enviroment variable
+		python manage.py shell
+	
+		START PROJECT
+	
+	create django project
+		django-admin startproject project_name
     run django project
-	python manage.py runserver
+		python manage.py runserver
     run django project on specifed server
-	python manage.py runserver 0.0.0.0:8000    
+		python manage.py runserver 0.0.0.0:8000    
     create app inside django project
-	python manage.py startapp app_name
+		python manage.py startapp app_name
+	
+		DATABASE
 
+	synchronie the database state with the current set of models and migrations
+		python manage.py migrate
+	tell django about some changes to your models
+		python manage.py makemigrations app_name
+	migration in sql
+		python manage.py sqlmigrate app_name 0001
+	check for any problem in your project without making migrations or toching db
+		python manage.py check
 
+		ADMIN
 
+	create a user
+		python manage.py createsuperuser
+	
 
 
 
