@@ -458,7 +458,17 @@
 		export FLASK_APP=app_name.py
 	start flask app
 		flask run
-
+	start flask shell
+		flask shell
+	initialize flask database
+		flask db init
+	flask database migration with commentary
+		flask db migrate -m "comment"
+	apply migrations to the database
+		flask db upgrade
+	undoes the last migration
+		flask db downgrade
+	
 			WORK WITH DJANGO
 
 	run python with specified enviroment variable
