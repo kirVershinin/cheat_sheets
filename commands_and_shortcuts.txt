@@ -341,8 +341,52 @@
 
     in build vim lessons
         vimtutor
+    delete charchter under the cursor
+        x
+    delete a word
+        dw
+    delete to the end of a line
+        d$
+    copy
+        y
+    copy word
+        yw
+    copy 'num' words
+        y'num'w
+    copy line
+        yy
+    copy 'num' lines
+        y'num'
+    paste above cursor
+        P
+    paste below cursor
+        p
+    replace the character under cursor with x
+        rx
+    replace the characters under cursor until in replace mode
+        R
+    find characters
+        /chars or ?chars and move with n or N
+    substitute the first occurrence of 'new' for 'old'
+        :s/old/new
+    substitute globally in the line, change all occurrences of "old" in the line
+        :s/old/new/g
+    change all occurrences of "old" between lines #1 and #2
+        :#1,#2s/old/new/g
+    change every occurrence in the whole file
+        :%s/old/new/g
+    to find every occurrence in the whole file, with a prompt whether to substitute or not
+        :%s/old/new/gc
+    excecute an external command
+        :!command
+    insert content of a file
+        :r filename
+    insert content of a command
+        :r !command
+    list of possible completions for command
+        :command  Ctrl+D
     undo last command
-		:u    
+		u or :u    
     undo all changes since opening buffer
         :u1|u
 
