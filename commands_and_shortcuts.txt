@@ -347,7 +347,9 @@
         dw
     delete to the end of a line
         d$
-    copy
+    delete all line from cursor
+		dG
+	copy
         y
     copy word
         yw
