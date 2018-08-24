@@ -472,6 +472,8 @@
 		pip freeze > requirements.txt		   
     install packages from requirements.txt
 		pip install -r requirements.txt
+	unistall packages
+		pip unistall -r requirements.txt
 
 			WORK WITH VIRTUALENV
     
