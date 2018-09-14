@@ -549,8 +549,41 @@
 		python manage.py createsuperuser
 	
 
+			WORK WITH ELASTICSEARCH
+	
+	run elasticsearch
+		./bin/elasticsearch
+	run elasticsearch as a demon
+		./bin/elasticsearch -d -p pid
 
 
+			VAGRANT
+
+	create server
+		vagrant up
 
 
+			DOCKER
+	
+	docker info
+		docker version
+	run docker deamon
+		sudo dockerd
+	build a container image and set the name and tag
+		docker build -t microblog:latest .
+	obtain a list of the images that you have locally
+		docker images
+	delete docker images
+		docker rmi 'imageid'
+	list of running containers
+		docker ps
+	stop the docker container
+		docker stop 'containerid'
+	
+			REDIS & RQ
+
+	start redis 
+		redis-server
+	start worker
+		rq worker 'queue name'
 
