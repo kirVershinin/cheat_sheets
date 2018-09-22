@@ -133,143 +133,249 @@ continue program execution in the backgound mode w sn:
 ##  LINUX FILES
 
 view file content
+
     cat /file
 
 view file content in new window
+
     less /file
 
 edit file content
+
     nano /file
 
 save stdout of file into another file
+
     /file.py > /file_output.txt
 
 who using this system right now
+
     users
+
 user groups
+
     groups user
+
 permissons legend
     drw-rw-r--
     -rw-rw-r--
-      1  2  3   (d = dir, - = file) (1 - owner, 2 - group, 3 - other)
+    1  2  3   (d = dir, - = file) (1 - owner, 2 - group, 3 - other)
+
 change file permissions
+
     chmod [ugoa][+-][rwx] dir (u - user, g - group, o - oher, a - all)
         ex: chmod ug+rw file.txt
+
 make file executable
+
     chmod +x filename
 
+
 input from file to program
+
     program < file
+
 output from program to file
+
     program > file
+
 output from program to file with full output
+
     program >> file
+
 output program errors to file
+
     program 2> file
+
 output program errors to file with full output
+
     program 2>> file
+
 program pipe
+
     program1 | program 2 | program 3
 
 download files
+
     wget url
+
 download file and save in specified directory
+
     wget -P /dir url
+
 download file and save with specified name
+
     wget -O /dir/filename url
+
 continue downloading if interrapted
+
     wget -c url
+
 check url for availability
+
     wget --spider
+
 download files with urls from txt file
+
     wget -i /file.txt
+
 recursive downloading from url
+
     wget -r -l deep
 
 find file in current directory
+
     find -name 'file'
+
 find file in specified directory
+
     find /dir -name 'file'
+
 find file in directory with specified parameters
+
     find -name '*.py'
+
 find file without register parameters
+
     find -iname file
+
 find file with specified path
+
     find -path path (ex: find -path "*subdir*/*jpg")
+
 find files with specified size
+
     find -size size
+
 find files in less then specified dir depth
+
     find -maxdepth num
+
 find files in more then specified dir depth
+
     find -mindepth num
 
 find string in file
+
     grep 'str' file
+
 count the number of string entries
+
     grep -c 'str' file
+
 find string in all files in specified directory
+
     grep  -r 'str' file
+
 list of files with specified string
+
     grep -l 'string' file
+
 list of files without specified string
+
     grep -L 'string' file
+
 find the number of line with specified string
+
     grep -n 'string' file
+
 find limited number of line with specified string
+
     grep -m num 'string' file
+
 find line with specified string and limited lines after
+
     grep -A num 'string' file
+
 find line with specified string and limited lines before
+
     grep -B num 'string' file
+
 find line with specified string and limited lines around
+
     grep -C num 'string' file
+
 find pattern with regexp
+
     grep -E "regexp"  file
 
 operate with file
+
     sed 'instruction' file
+
 change specified word by another and save to another file
+
     sed 's/name1/name2/g' file > new_file
+
 output specified lines from file
+
     sed -n 'num1,num2p' file
+
 output all lines except specified lines from file
+
     sed 'num1,num2d' file
 
 output specified quantity of lines from start
+
     head -n num file
+
 output specified quantity of lines from end
+
     tail -n num file | less
 
 count lines in file
+
     wc -l file
+
 count words in file
+
     wc -w file
+
 count charcters in file
+
     wc -c file
 
 compare two files
+
     diff -qr dir1/ dir2/
+
 compare two files and open result in new window
+
     diff file1 file2 | less
 
 create .zip archive
+
     zip archive.zip file file1 file2..
+
 create .tar archive
+
     tar -cvf archive.tar file file1 ...
+
 create .gz archive
+
     gzip file
+
 create .gz archive from .tar archive
+
     gzip archive.tar
+
 unpack .zip archive
+
     unzip archive.zip
+
 unpack .gz archive
+
     gunzip archive.gz
+
 unpack .tar archive
+
     tar -xvf archive.tar
+
 unpack .tar.gz archive
+
     tar -xzvf archive.tar.gz
 
-        URL
+##        URL
 
 take information about URL
     curl -v 'url'
