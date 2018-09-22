@@ -1029,7 +1029,7 @@ start worker:
 
     rq worker 'queue name'
 
-##        Hadoop
+##        HADOOP
 
 copy small files:
 
