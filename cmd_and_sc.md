@@ -1,17 +1,25 @@
 ##  LINUX DIRECTORY
+
 new window in the terminal:
-        Ctrl + Shift + T
+
+    Ctrl + Shift + T
+
 close current window in the terminal:
+
     Ctrl + Shift + W
 
-    change window in the terminal:
-        Shift + Left/Right
+change window in the terminal:
 
-    print working directoty
-        pwd
+    Shift + Left/Right
 
-    list directory content
-        ls
+print working directoty
+
+    pwd
+
+list directory content
+
+    ls
+
     detailed list directory content
         ls -la
     detailed list directory content by size
