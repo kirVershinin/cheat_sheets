@@ -932,11 +932,12 @@ run python with specified enviroment variable
     python manage.py shell
 
 START PROJECT
-
-
 create django project
+
     django-admin startproject project_name
+
 run django project
+
     python manage.py runserver
 run django project on specifed server
     python manage.py runserver 0.0.0.0:8000
