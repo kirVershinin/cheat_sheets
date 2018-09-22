@@ -1,3 +1,6 @@
+-[LINUX DIRECTORY](#linux-directory)
+
+
 ##  LINUX DIRECTORY
 
 new window in the terminal:
