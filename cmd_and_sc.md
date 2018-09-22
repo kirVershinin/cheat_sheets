@@ -931,7 +931,7 @@ run python with specified enviroment variable
 
     python manage.py shell
 
-START PROJECT__
+START PROJECT <br />
 create django project
 
     django-admin startproject project_name
