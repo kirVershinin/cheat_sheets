@@ -92,7 +92,7 @@ move file/directory:
 
 rename file:
 
-mv filename new_filename
+    mv filename new_filename
 
 run program:
 
@@ -130,7 +130,7 @@ continue program execution in the backgound mode w sn:
 
     bg %<num>
 
-##LINUX FILES
+##  LINUX FILES
 
 view file content
     cat /file
