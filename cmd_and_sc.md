@@ -708,324 +708,377 @@ undo all changes since opening buffer:
 
 ##        GNUPLOT
 
-make chart by file (1 = x, 2 = y)
+make chart by file (1 = x, 2 = y):
 
     plot file using 1:2
 
-make few charts by file
+make few charts by file:
 
     plot file using 1:2, file using 1:3
 
-add names for coordinates
+add names for coordinates:
 
     plot file using 1:2 title 'name'
 
-add names for coordinates automatically from first line
+add names for coordinates automatically from first line:
 
     set key autotitle columnhead
 
-set autoscale
+set autoscale:
 
     set autoscale xy / unset autoscale xy
 
 ##        GITHUB
 
-create repository on github.com and clone to the location where you want
+create repository on github.com and clone to the location where you want:
 
     git clone https://github.com/my_username/my_new_repository
 
-stage the file for commit to my local repository
+stage the file for commit to my local repository:
 
     git add file / git add .
 
-to unstage a file
+to unstage a file:
 
     git reset HEAD file / git reset file
 
-commit the file that you've staged in local repository
+commit the file that you've staged in local repository:
 
     git commit -m "message"
 
-to remove this commit
+to remove this commit:
 
     git reset --soft HEAD~1
 
-push the changes to github
+push the changes to github:
 
     git push
 
-initialize and add existing repository
+initialize and add existing repository:
 
     git init
 
-stage the file for commit to my local repository
+stage the file for commit to my local repository:
 
     git add .
 
-commit the file that you've staged in local repository
+commit the file that you've staged in local repository:
 
     git commit -m "message"
 
-add URL for the remote repository
+add URL for the remote repository:
 
     git remote add origin https://github.com/my_username/my_repository
 
-verify the new remote URL
+verify the new remote URL:
 
     git remote -v
 
-push changes to github
+push changes to github:
 
     git push --set-upstream origin master
 
-push changes to github with force
+push changes to github with force:
 
     git push -f [alias] [branch]
 
-if fatal: refusing to merge unrelated histories
+if fatal: refusing to merge unrelated histories:
 
     git pull origin master --allow-unrelated-histories
 
-check what is different from our last commit
+check what is different from our last commit:
 
     git diff HEAD
 
-check what is different in staged files  from last commit
+check what is different in staged files  from last commit:
 
     git diff --staged
 
-reset the file to the latest commited version
+reset the file to the latest commited version:
 
     git checkout --file
 
-pull down any new changes
+pull down any new changes:
 
     git pull / git pull origin master
 
-create new branch and switch to it
+create new branch and switch to it:
 
     git checkout -b new_branch
 
-merge the specifed branch's history into current one
+merge the specifed branch's history into current one:
 
     git merge branch
 
-delete file from repo
+delete file from repo:
 
     git rm --cached file
 
-delete file from repo and from the local file system
+delete file from repo and from the local file system:
 
     git rm file
 
 ##        PYTHON
 
-check version
+check version:
 
     python -V / python3 --version
 
 ##        PIP
 
-pip commands and options
+pip commands and options:
 
     pip
 
-list of installed packages
+list of installed packages:
 
     pip list
 
-list of outdated packages
+list of outdated packages:
 
     pip list -o
 
-check for broken packages
+check for broken packages:
 
     pip check
 
-search in pip repository
+search in pip repository:
 
     pip search query
 
-output installed packages in requirements format and save to file
+output installed packages in requirements format and save to file:
 
     pip freeze > requirements.txt
 
-install packages from requirements.txt
+install packages from requirements.txt:
 
     pip install -r requirements.txt
 
-unistall packages
+unistall packages:
 
     pip unistall -r requirements.txt
 
 ##        VIRTUALENV
 
-create new virtual enviroment with default python version
+create new virtual enviroment with default python version:
 
     virtualenv name
 
-create new virtual enviroment
+create new virtual enviroment:
 
     virtualenv
 
-specifed python version in virtual enviroment
+specifed python version in virtual enviroment:
 
     vitrualenv -p python3 . or virtualenv -p /usr/local/bin/python3
 
-activate virtual enviroment
+activate virtual enviroment:
 
     source bin/activate
 
-deactivate virtual enviroment
+deactivate virtual enviroment:
 
     deacivate
 
-check for instaled pacakges in current virtual enviroment
+check for instaled pacakges in current virtual enviroment:
 
     pip freeze
 
 ##        VENV
 
 
-create new venv with python3
+create new venv with python3:
 
     python3 -m venv project_name
 
-activate venv
+activate venv:
 
     source project_name/bin/activate
 
 ##        FLASK
 
-seting flask app enviroment variable
+seting flask app enviroment variable:
 
     export FLASK_APP=app_name.py
 
-start flask app
+start flask app:
 
     flask run
 
-start flask shell
+start flask shell:
 
     flask shell
 
-initialize flask database
+initialize flask database:
 
     flask db init
 
-flask database migration with commentary
+flask database migration with commentary:
 
     flask db migrate -m "comment"
 
-apply migrations to the database
+apply migrations to the database:
 
     flask db upgrade
 
-undoes the last migration
+undoes the last migration:
 
     flask db downgrade
 
 ##        DJANGO
 
-run python with specified enviroment variable
+run python with specified enviroment variable:
 
     python manage.py shell
 
 START PROJECT <br />
 
-create django project
+create django project:
 
     django-admin startproject project_name
 
-run django project
+run django project:
 
     python manage.py runserver
-run django project on specifed server
+
+run django project on specifed server:
+
     python manage.py runserver 0.0.0.0:8000
-create app inside django project
+
+create app inside django project:
+
     python manage.py startapp app_name
 
-    DATABASE
+DATABASE <br />
 
-synchronie the database state with the current set of models and migrations
+synchronie the database state with the current set of models and migrations:
+
     python manage.py migrate
-tell django about some changes to your models
+
+tell django about some changes to your models:
+
     python manage.py makemigrations app_name
-migration in sql
+
+migration in sql:
+
     python manage.py sqlmigrate app_name 0001
-check for any problem in your project without making migrations or toching db
+
+check for any problem in your project without making migrations or toching db:
+
     python manage.py check
 
-    ADMIN
+ADMIN <br />
 
-create a user
+create a user:
+
     python manage.py createsuperuser
 
+##        ELASTICSEARCH
 
-        ELASTICSEARCH
+run elasticsearch:
 
-run elasticsearch
     ./bin/elasticsearch
-run elasticsearch as a demon
+
+run elasticsearch as a demon:
+
     ./bin/elasticsearch -d -p pid
 
+##        VAGRANT
 
-        VAGRANT
+create server:
 
-create server
     vagrant up
 
+##        DOCKER
 
-        DOCKER
+docker info:
 
-docker info
     docker version
-run docker deamon
+
+run docker deamon:
+
     sudo dockerd
-build a container image and set the name and tag
+
+build a container image and set the name and tag:
+
     docker build -t microblog:latest .
-obtain a list of the images that you have locally
+
+obtain a list of the images that you have locally:
+
     docker images
-delete docker images
+
+delete docker images:
+
     docker rmi 'imageid'
-list of running containers
+
+list of running containers:
+
     docker ps
-stop the docker container
+
+stop the docker container:
+
     docker stop 'containerid'
 
-        REDIS & RQ
+##        REDIS & RQ
 
-start redis
+start redis:
+
     redis-server
-start worker
-    rq worker 'queue name'
 
+start worker:
+
+    rq worker 'queue name'
 
         HDFS
 
-copy small files
+copy small files:
+
     hdfs dfs -cp /dir/file1 /dir2/file2
-copy big files
+
+copy big files:
+
     hdfs distcp /dir/file1 /dir2/file2
-move files
+
+move files:
+
     hdfs dfs -mv /dir/file1 /dir2
-copy from local system to hdfs
+
+copy from local system to hdfs:
+
     hdfs dfs -put /localfile /dir/file
-copy from hdfs to local system
+
+copy from hdfs to local system:
+
     hdfs dfs -get /dir/file /localfile
-delete files to trash
+
+delete files to trash:
+
     hdfs dfs -rm /dir/file
-delete directory to trash
+
+delete directory to trash:
+
     hdfs dfs -rm -r /dir
-file and direcory size
+
+file and direcory size:
+
     hdfs dfs -du -h /dir/
-check system for missing and wrong blocks
+
+check system for missing and wrong blocks:
+
     hdfs fsck /dir
-hdfs administration
+
+hdfs administration:
+
     hdfs dfsadmin -<cmd>
-hdfs statistic
+
+hdfs statistic:
+
     hdfs dfsadmin -report
-hdfs safemode
+
+hdfs safemode:
+
     hdfs dfsadmin -safemode
-hdfs block balancer
+
+hdfs block balancer:
+
     hdfs balancer
