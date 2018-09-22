@@ -12,116 +12,121 @@ change window in the terminal:
 
     Shift + Left/Right
 
-print working directoty
+print working directoty:
 
     pwd
 
-list directory content
+list directory content:
 
     ls
 
-detailed list directory content
+detailed list directory content:
 
     ls -la
 
-detailed list directory content by size
+detailed list directory content by size:
 
     ls --sort=size -l
 
-detailed list directory content sorted by changing time
+detailed list directory content sorted by changing time:
 
     ls --sort=time -l
 
-example of similarity
+example of similarity:
 
     ls --all --human-readable -l
         == ls -a -h -l
         == ls -ahl
         == ls -lah
 
-create new directory
+create new directory:
 
     mkdir /dir
 
-create new directory and her 'parents'
+create new directory and her 'parents':
 
     mkdir -p /dir
 
-create multiple directoties
+create multiple directoties:
 
     mkdir ./{dir1,dir2,dir3}
 
-create new file
+create new file:
 
     touch /dir/file
 
-create multiple files
+create multiple files:
 
     touch name1 name2
 
-create multiple files with same char/extensions
+create multiple files with same char/extensions:
 
     touch n{ame1,ame2}.py
 
-enter directory
+enter directory:
     cd /dir
 
-delete file
+delete file:
+
     rm /dir
-delete directory
+
+delete directory:
+
     rm -r /dir
-delete directory without questions
+
+delete directory without questions:
+
     rm -rf /dir
 
-copy file from dir to the new dir
+copy file from dir to the new dir:
 
     cp /dir/file /new_dir
 
-copy dir to the new dir
+copy dir to the new dir:
 
     cp /dir /new_dir
 
-move file/directory
+move file/directory:
 
     mv /dir or /dir/file /new_dir
 
-rename file
+rename file:
 
 mv filename new_filename
 
-run program
+run program:
 
     program_name
 
-run program in background mode instantly
+run program in background mode instantly:
 
     program_name &
 
-stop program execution
+stop program execution:
 
     Ctrl + C
 
-suspend program execution
+suspend program execution:
 
     Ctrl + Z
 
-continue program execution
+continue program execution:
 
     fg
 
-continue program execution in the backgound mode
+continue program execution in the backgound mode:
 
     bg
 
-list of running programs
+list of running programs:
 
     jobs
 
-continue program execution with specified number
+continue program execution with specified number:
 
     fg %<num>
 
-continue program execution in the backgound mode w sn
+continue program execution in the backgound mode w sn:
 
     bg %<num>
 
