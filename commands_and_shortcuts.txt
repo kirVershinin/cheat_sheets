@@ -431,7 +431,7 @@
     verify the new remote URL
 		git remote -v
     push changes to github
-		git push [alias] [branch]
+		git push --set-upstream origin master
     push changes to github with force
 		git push -f [alias] [branch]
     if fatal: refusing to merge unrelated histories
@@ -586,4 +586,35 @@
 		redis-server
 	start worker
 		rq worker 'queue name'
+
+
+			HDFS
+
+	copy small files
+		hdfs dfs -cp /dir/file1 /dir2/file2
+	copy big files 
+		hdfs distcp /dir/file1 /dir2/file2
+	move files
+		hdfs dfs -mv /dir/file1 /dir2
+	copy from local system to hdfs
+		hdfs dfs -put /localfile /dir/file
+	copy from hdfs to local system
+		hdfs dfs -get /dir/file /localfile
+	delete files to trash 
+		hdfs dfs -rm /dir/file
+	delete directory to trash
+		hdfs dfs -rm -r /dir
+	file and direcory size
+		hdfs dfs -du -h /dir/
+	check system for missing and wrong blocks
+		hdfs fsck /dir
+	hdfs administration
+		hdfs dfsadmin -<cmd>
+	hdfs statistic
+		hdfs dfsadmin -report
+	hdfs safemode
+		hdfs dfsadmin -safemode
+	hdfs block balancer
+		hdfs balancer
+	
 
