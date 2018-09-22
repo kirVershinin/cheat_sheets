@@ -933,6 +933,7 @@ run python with specified enviroment variable
 
 START PROJECT
 
+
 create django project
     django-admin startproject project_name
 run django project
