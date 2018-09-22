@@ -1,7 +1,25 @@
-- [LINUX DIRECTORY](#linux-directory)
-- [LINUX Files](#linux-files)
+- [Linux Directory](#linux-directory)
+- [Linux Files](#linux-files)
+- [Linux System](#linux-system)
+- [URL](#url)
+- [SSH](#ssh)
+- [Tmux](#tmux)
+- [VIM](#vim)
+- [Gnuplot](#gnuplot)
+- [GitHub](#github)
+- [Python](#python)
+- [PIP](#pip)
+- [Virtualenv](#virtualenv)
+- [Venv](#venv)
+- [Flask](#flask)
+- [Django](#django)
+- [Elasticsearch](#elasticsearch)
+- [Vagrant](#vagrant)
+- [Docker](#docker)
+- [Redis & RQ](#redis-&-rq)
+- [Hadoop](#hadoop)
 
-##  LINUX DIRECTORY
+##  Linux Directory
 
 new window in the terminal:
 
@@ -134,7 +152,7 @@ continue program execution in the backgound mode w sn:
 
     bg %<num>
 
-##  LINUX FILES
+##  Linux Files
 
 view file content:
 
@@ -174,7 +192,6 @@ change file permissions:
 make file executable:
 
     chmod +x filename
-
 
 input from file to program:
 
@@ -380,6 +397,84 @@ unpack .tar.gz archive:
 
     tar -xzvf archive.tar.gz
 
+##        Linux System
+
+stop program execution:
+
+    Ctrl + C
+
+pause program execution:
+
+    Ctrl + Z
+
+continue program execution:
+
+    fg
+
+continue program execution in the backgound mode:
+
+    bg
+
+list of running programs:
+
+    jobs
+
+continue program execution with specified number:
+
+    fg %num
+
+continue program execution in the backgound mode w sn:
+
+    bg %num
+
+view your processes:
+
+    ps
+
+view processes in real time:
+
+    top
+
+view processes specified user:
+
+    top -u name
+
+try to eliminate processes with specified number:
+
+    kill num
+
+finally eliminate processes with specified number:
+
+    kill -9 num
+
+information about RAM:
+
+    free
+
+information about CPU core quantity:
+
+    nproc
+
+information about CPU:
+
+    lscpu
+
+run program in few threads (p = quantity of threads):
+
+    program -x -p num
+
+how much space using specified dir:
+
+    du -h dir
+
+how much space using current dir with specifed depth:
+
+    du --max-depth 1 -h
+
+system storage info(used/available):
+
+    df -h
+
 ##        URL
 
 take information about URL:
@@ -460,85 +555,7 @@ copy files from client (dir1/file) to server (dir2):
 
     scp -P port dir1/file login@adress:dir2
 
-##        LINUX SYSTEM
-
-stop program execution:
-
-    Ctrl + C
-
-pause program execution:
-
-    Ctrl + Z
-
-continue program execution:
-
-    fg
-
-continue program execution in the backgound mode:
-
-    bg
-
-list of running programs:
-
-    jobs
-
-continue program execution with specified number:
-
-    fg %num
-
-continue program execution in the backgound mode w sn:
-
-    bg %num
-
-view your processes:
-
-    ps
-
-view processes in real time:
-
-    top
-
-view processes specified user:
-
-    top -u name
-
-try to eliminate processes with specified number:
-
-    kill num
-
-finally eliminate processes with specified number:
-
-    kill -9 num
-
-information about RAM:
-
-    free
-
-information about CPU core quantity:
-
-    nproc
-
-information about CPU:
-
-    lscpu
-
-run program in few threads (p = quantity of threads):
-
-    program -x -p num
-
-how much space using specified dir:
-
-    du -h dir
-
-how much space using current dir with specifed depth:
-
-    du --max-depth 1 -h
-
-system storage info(used/available):
-
-    df -h
-
-##        TMUX
+##        Tmux
 
 create new windiow:
 
@@ -710,7 +727,7 @@ undo all changes since opening buffer:
 
     :u1|u
 
-##        GNUPLOT
+##        Gnuplot
 
 make chart by file (1 = x, 2 = y):
 
@@ -732,7 +749,7 @@ set autoscale:
 
     set autoscale xy / unset autoscale xy
 
-##        GITHUB
+##        GitHub
 
 create repository on github.com and clone to the location where you want:
 
@@ -822,7 +839,7 @@ delete file from repo and from the local file system:
 
     git rm file
 
-##        PYTHON
+##        Python
 
 check version:
 
@@ -862,7 +879,7 @@ unistall packages:
 
     pip unistall -r requirements.txt
 
-##        VIRTUALENV
+##        Virtualenv
 
 create new virtual enviroment with default python version:
 
@@ -888,7 +905,7 @@ check for instaled pacakges in current virtual enviroment:
 
     pip freeze
 
-##        VENV
+##        Venv
 
 
 create new venv with python3:
@@ -899,7 +916,7 @@ activate venv:
 
     source project_name/bin/activate
 
-##        FLASK
+##        Flask
 
 seting flask app enviroment variable:
 
@@ -929,7 +946,7 @@ undoes the last migration:
 
     flask db downgrade
 
-##        DJANGO
+##        Django
 
 run python with specified enviroment variable:
 
@@ -977,7 +994,7 @@ create a user:
 
     python manage.py createsuperuser
 
-##        ELASTICSEARCH
+##        Elasticsearch
 
 run elasticsearch:
 
@@ -987,13 +1004,13 @@ run elasticsearch as a demon:
 
     ./bin/elasticsearch -d -p pid
 
-##        VAGRANT
+##        Vagrant
 
 create server:
 
     vagrant up
 
-##        DOCKER
+##        Docker
 
 docker info:
 
@@ -1023,7 +1040,7 @@ stop the docker container:
 
     docker stop 'containerid'
 
-##        REDIS & RQ
+##        Redis & RQ
 
 start redis:
 
@@ -1033,7 +1050,7 @@ start worker:
 
     rq worker 'queue name'
 
-##        HADOOP
+##        Hadoop
 
 copy small files:
 
