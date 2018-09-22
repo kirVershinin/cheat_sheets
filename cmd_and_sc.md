@@ -64,6 +64,7 @@ create multiple files with same char/extensions:
     touch n{ame1,ame2}.py
 
 enter directory:
+
     cd /dir
 
 delete file:
